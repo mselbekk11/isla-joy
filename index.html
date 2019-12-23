@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Isla Osborne</title>
+
+  <meta name="description" content="exuve" />
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93900315-2"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-93900315-2');
+ </script>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link rel="shortcut icon" href="https://res.cloudinary.com/mselbekk-com/image/upload/v1576866295/iii_i8v8ae.png" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Patua+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+  
+  
+
+
+
+  <script type="text/javascript">
+    // global varibles
+    var done = true,
+        fading_div = document.getElementById('fading_div'),
+        fade_in_button = document.getElementById('fade_in'),
+        fade_out_button = document.getElementById('fade_out');
+    
+    function function_opacity(opacity_value, fade_in_or_fade_out) { // fade_in_or_out - 0 = fade in, 1 = fade out
+        fading_div.style.opacity = opacity_value / 100;
+        fading_div.style.filter = 'alpha(opacity=' + opacity_value + ')';
+        if (fade_in_or_fade_out == 'in' && opacity_value == 1) {
+            fading_div.style.display = 'block';
+        }
+        if (fade_in_or_fade_out == 'in' && opacity_value == 100) {
+            done = true;
+        }
+        if (fade_in_or_fade_out == 'out' && opacity_value == 1) {
+            fading_div.style.display = 'none';
+            done = true;
+        }
+    }
+    //this will equlaize the end result
+    // fade in button
+    fade_in_button.onclick = function () {
+        if (done && fading_div.style.opacity !== '1') {
+            done = false;
+            for (var i = 1; i <= 100; i++) {
+                setTimeout("function_opacity(" + i + ",'in')", i * 5);
+            }
+        }
+    };
+    
+    // fade out button
+    fade_out_button.onclick = function () {
+        if (done && fading_div.style.opacity !== '0') {
+            done = false;
+            for (var i = 100; i >= 1; i--) {
+                setTimeout("function_opacity(" + i + ",'out')", (i - 100) * -1 * 5);
+            }
+        }
+    };
+    alert (test);
+    </script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <!-- <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+
+  <div class="background-cover">
+    <img src="img/baby-isla.jpg"/>
+    
+    <!-- <img class="left" src="img/ee.png"/> -->
+    <!-- <a href="https://www.linkedin.com/in/joe-d-cunha-6253913a/?originalSubdomain=uk" target="blank"><img class="right" src="img/linked-insurance.png"/></a> -->
+
+
+
+
+
+<!-- <div class="section no-pad-bot middle">
+<div class="container middle">
+  <div class="row">
+<div class="col s6 skills-left">
+  <h1>Main skill set</h1>
+  <ul>
+    <li><img src="img/icon-1.svg" alt="HTML">HTML</li>
+    <li><img src="img/icon-2.svg" alt="CSS">CSS</li>
+    <li><img src="img/icon-3.svg" alt="JavaScript">JavaScript (learning)</li>
+    <li><img src="img/icon-4.svg" alt="Tech Support">Tech Support</li>
+    <li><img src="img/icon-5.svg" alt="Customer Success">Customer Success</li>
+  </ul>
+</div>
+<div class="col s6 skills-right">
+  <h1>Experience using</h1>
+  <ul>
+      <li><img src="img/icon-7.svg" alt="SFCC">SFCC</li>
+      <li><img src="img/icon-8.svg" alt="Magento">Magento</li>
+      <li><img src="img/icon-9.svg" alt="Shopify">Shopify</li>
+      <li><img src="img/icon-6.svg" alt="Wordpress">Wordpress</li>
+      <li><img src="img/icon-10.svg" alt="Photoshop">Photoshop</li>
+  </ul>
+</div>
+</div>
+</div>
+</div> -->
+
+
+  <footer class="page-footer">
+    <!-- <div class="container bottom">
+      <div class="row grey-box">
+
+        <h2>Drop us a message<span class="emoji">👋</span> </h2>
+       
+                <form class="col s12" name="contact" data-netlify="true">
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="first_name" type="text" type="text" name="first name">
+                      <label for="first_name" >First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" type="text" name="second name">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" type="email" name="email">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea2" class="materialize-textarea" data-length="120" name="message"></textarea>
+                        <label for="textarea2">Message</label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <button id="send" class="btn waves-effect waves-light" type="submit" name="action" value="Send">Submit</button>
+                    </div>
+                  </form>
+                </form>
+              </div>
+      </div> -->
+  </footer>
+</div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+  </body>
+</html>
