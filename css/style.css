@@ -20,6 +20,7 @@ body {
   background-color: #000;
   min-height: 1020px;
   text-align: center;
+  /* margin: 0px 400px;; */
 
 
 
@@ -45,7 +46,7 @@ background: linear-gradient(90deg, rgba(6,0,105,1) 0%, rgba(93,9,177,1) 55%, rgb
 }
 
 .background-cover img {
-width: 100%;
+width: 60%;
 }
 
 .background-cover img.left{
@@ -597,6 +598,10 @@ color:#000;
 
   /* .row.grey-box .row .col.s6 {padding-left: 0px!important;padding-right: 0px;} */
 
+  .background-cover img {
+    width: 80%;
+    }
+
 }
 
 
@@ -635,6 +640,12 @@ color:#000;
 
 .page-footer {
   padding-bottom: 10px!important;
+
+}
+
+.background-cover img {
+  width: 90%;
+  }
 
 }
 
